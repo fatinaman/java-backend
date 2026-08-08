@@ -46,6 +46,20 @@ class BankAccount {
             System.out.println("Unknown error occured.");
         }
     }
+
+    String getAccountHolderName(){
+        if (this.accountHolderName != null){
+            return this.accountHolderName;
+        }
+        return "Error";
+    }
+
+    void setAccountHolderName(String name){
+        if(name.length()>0){
+            this.accountHolderName = name;
+            System.out.printf("Account Holder name updated to: %s", this.accountHolderName);
+        }
+    }
 }
 
 public class Main{
@@ -58,6 +72,6 @@ public class Main{
         // b1.printInfo();
         // b2.printInfo();
         // b1.balance += 80000;
-        System.out.println(b1.getBalance());
+        System.out.printf("Balance: %.2f%n", b1.getBalance());
     }
 } 
