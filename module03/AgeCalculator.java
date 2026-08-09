@@ -7,5 +7,6 @@ public class AgeCalculator {
         System.out.print("Enter your date of birth: ");
         int birthYear = sc.nextInt();
         System.out.printf("Your age is %d.", year-birthYear);
+        sc.close();
     }
 }
