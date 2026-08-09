@@ -1,3 +1,4 @@
+package module07;
 class Circle{
     static double PI = 3.14159;
     static double area(double radius){
@@ -18,5 +19,8 @@ class TemperatureConverter{
 
 
 public class Main {
-    
+    public static void main(String[] args) {
+        System.out.println(Circle.area(5));   
+        System.out.println(TemperatureConverter.celsiusToFahrenheit(120.5));
+    }
 }
